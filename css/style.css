@@ -7,7 +7,7 @@
     /* background-color: #fffffe; */
 }
 
-.card-container::after {
+.float-card::after {
     content: "";
     display: table;
     clear: both;
@@ -20,7 +20,8 @@ header h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    text-shadow: 0px 0px 30px grey;
 }
 
 header{
@@ -48,14 +49,17 @@ p{
 }
 
 .card-container{
-    width: calc(100% / 3);
+    width: calc(100%/3);
     float: left;
     margin-bottom: 30px;
+    display: flex;    
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .card{
     background-color: black;
-    box-shadow: 0 0 20px 5px grey;
+    box-shadow: 0 0 20px 2px grey;
     width: 90%;
     height: 100px;
     color: white;
@@ -68,8 +72,8 @@ p{
 }
 
 h5, h6{
-    margin-bottom: 10px;
-    padding: 10px 0px 0px 5px;
+    margin-bottom: 8px;
+    padding: 10px 0px 0px 0px;
 }
 
 .cyan {
